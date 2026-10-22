@@ -1,0 +1,163 @@
+import type { MachineType, MachineCategoryId } from './types';
+
+export const MACHINE_CATEGORIES: { id: MachineCategoryId; name: string; kkPrefix: string }[] = [
+  { id: 'krenler', name: 'Köprülü ve Portal Krenler', kkPrefix: 'KK09' },
+  { id: 'kendinden-tahrikli', name: 'Kendinden Tahrikli Endüstriyel Araçlar', kkPrefix: 'KK05' },
+  { id: 'basincli-kaplar', name: 'Basınçlı Kaplar', kkPrefix: 'KK11' },
+  { id: 'platformlar', name: 'Personel Yükseltici Platform ve Liftler', kkPrefix: 'KK08' },
+];
+
+export const MACHINES: MachineType[] = [
+  {
+    id: 'gezer-kopru-kren',
+    name: 'Gezer Köprülü Kren',
+    category: 'krenler',
+    kkCode: 'KK09',
+    krCode: 'KR09',
+    reportTitle: 'Köprülü Kren Periyodik Kontrol Raporu',
+    icon: 'Gantry',
+  },
+  {
+    id: 'pergel-kren',
+    name: 'Pergel Kren',
+    category: 'krenler',
+    kkCode: 'KK09',
+    krCode: 'KR09',
+    reportTitle: 'Pergel Kren Periyodik Kontrol Raporu',
+    icon: 'Gantry',
+  },
+  {
+    id: 'monoray-kren',
+    name: 'Monoray Kren',
+    category: 'krenler',
+    kkCode: 'KK09',
+    krCode: 'KR09',
+    reportTitle: 'Monoray Kren Periyodik Kontrol Raporu',
+    icon: 'Gantry',
+  },
+  {
+    id: 'forklift',
+    name: 'Forklift',
+    category: 'kendinden-tahrikli',
+    kkCode: 'KK05',
+    krCode: 'KR05',
+    reportTitle: 'Kendinden Tahrikli Endüstriyel Araç Periyodik Kontrol Raporu',
+    icon: 'Forklift',
+  },
+  {
+    id: 'transpalet',
+    name: 'Transpalet',
+    category: 'kendinden-tahrikli',
+    kkCode: 'KK05',
+    krCode: 'KR05',
+    reportTitle: 'Kendinden Tahrikli Endüstriyel Araç Periyodik Kontrol Raporu',
+    icon: 'Forklift',
+  },
+  {
+    id: 'hava-tanki',
+    name: 'Hava Tankı',
+    category: 'basincli-kaplar',
+    kkCode: 'KK11',
+    krCode: 'KR11',
+    reportTitle: 'Hava Tankı Periyodik Kontrol Raporu',
+    icon: 'Cylinder',
+  },
+  {
+    id: 'kompresor',
+    name: 'Kompresör',
+    category: 'basincli-kaplar',
+    kkCode: 'KK11',
+    krCode: 'KR11',
+    reportTitle: 'Kompresör Periyodik Kontrol Raporu',
+    icon: 'Cylinder',
+  },
+  {
+    id: 'hidrofor',
+    name: 'Hidrofor',
+    category: 'basincli-kaplar',
+    kkCode: 'KK11',
+    krCode: 'KR11',
+    reportTitle: 'Hidrofor Periyodik Kontrol Raporu',
+    icon: 'Cylinder',
+  },
+  {
+    id: 'genlesme-tanki',
+    name: 'Genleşme Tankı',
+    category: 'basincli-kaplar',
+    kkCode: 'KK11',
+    krCode: 'KR11',
+    reportTitle: 'Genleşme Tankı Periyodik Kontrol Raporu',
+    icon: 'Cylinder',
+  },
+  {
+    id: 'personel-platformu',
+    name: 'Personel Yükseltici Platform',
+    category: 'platformlar',
+    kkCode: 'KK08',
+    krCode: 'KR08',
+    reportTitle: 'Yükseltilebilen Seyyar İş Platformu Periyodik Kontrol Raporu',
+    icon: 'Construction',
+  },
+  {
+    id: 'arac-kaldirma-lifti',
+    name: 'Araç Kaldırma Lifti',
+    category: 'platformlar',
+    kkCode: 'KK08',
+    krCode: 'KR08',
+    reportTitle: 'Araç Kaldırma Lifti Periyodik Kontrol Raporu',
+    icon: 'Construction',
+  },
+  {
+    id: 'caraskal',
+    name: 'Caraskal',
+    category: 'krenler',
+    kkCode: 'KK09',
+    krCode: 'KR09',
+    reportTitle: 'Caraskal Periyodik Kontrol Raporu',
+    icon: 'Anchor',
+  },
+  {
+    id: 'istif-makinesi',
+    name: 'İstif Makinesi',
+    category: 'kendinden-tahrikli',
+    kkCode: 'KK05',
+    krCode: 'KR05',
+    reportTitle: 'İstif Makinesi Periyodik Kontrol Raporu',
+    icon: 'Forklift',
+  },
+  {
+    id: 'kalorifer-kazani',
+    name: 'Kalorifer ve Sıcak Su Kazanı',
+    category: 'basincli-kaplar',
+    kkCode: 'KK11',
+    krCode: 'KR11',
+    reportTitle: 'Kalorifer ve Sıcak Su Kazanı Periyodik Kontrol Raporu',
+    icon: 'Flame',
+  },
+  {
+    id: 'kizgin-yag-kazani',
+    name: 'Kızgın Yağ Kazanı',
+    category: 'basincli-kaplar',
+    kkCode: 'KK11',
+    krCode: 'KR11',
+    reportTitle: 'Kızgın Yağ Kazanı Periyodik Kontrol Raporu',
+    icon: 'Flame',
+  },
+  {
+    id: 'boyler-akumulasyon',
+    name: 'Boyler / Akümülasyon Tankı',
+    category: 'basincli-kaplar',
+    kkCode: 'KK11',
+    krCode: 'KR11',
+    reportTitle: 'Boyler / Akümülasyon Tankı Periyodik Kontrol Raporu',
+    icon: 'Cylinder',
+  },
+];
+
+export const MACHINE_MAP: Record<string, MachineType> = Object.fromEntries(
+  MACHINES.map((m) => [m.id, m])
+);
+
+export function getMachine(id: string): MachineType | undefined {
+  return MACHINE_MAP[id];
+}
